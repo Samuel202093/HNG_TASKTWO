@@ -36,13 +36,13 @@ http://localhost:3000/number/:num
   
    GET /
 
-  Description: Returns user data including email, current date and time, and GitHub URL.
+  Description: Returns data including number, is_prime, is_perfect, properties, digit_sum, fun_fact and GitHub URL.
 
 Request:
 
    Method: GET
    
-   URL: http://localhost:3000/number/:num
+   URL: http://localhost:3000/number/81
   
 Response:
 
@@ -52,11 +52,17 @@ Response Body:
 
 {
     "number": 81,
+    
     "is_prime": false,
+    
     "is_perfect": false,
+    
     "properties": ["odd"],
+    
     "digit_sum": 9,
+    
     "fun_fact": "81 is an odd number, meaning it is not divisible by 2.",
+    
     "github_url": "https://github.com/Samuel202093/HNG_TASKTWO"
 }
 
@@ -69,6 +75,7 @@ Response Body:
 {
 
 "number": "alphabet",
+
 "error": true
 
 }
